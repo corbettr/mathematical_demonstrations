@@ -19,7 +19,7 @@ Simulation of [Buffon's Needle Problem](https://en.wikipedia.org/wiki/Buffon's_n
 
 ![BuffonNeedlePic](pictures/BuffonNeedlePic.png) ![BuffonNeedlePic2](pictures/BuffonNeedlePic2.png) ![BuffonNeedlePic3](pictures/BuffonNeedlePic3.png)
 
-## [`ConditionalProbBoyGirl.py`](ConditionalProbBoyGirl.py`)
+## [`ConditionalProbBoyGirl.py`](ConditionalProbBoyGirl.py)
 One of the first non-intuitive problems you see in conditional probability is some variant of the [Boy or Girl Paradox](https://en.wikipedia.org/wiki/Boy_or_Girl_paradox).  For example, assume a family has two children (the Boy/Girl gender of each is independent and has 50/50 probability).   This script generates a bunch of random examples and *very explicitly* calculates the relevant quantities to the answer the following:
 ```
 Probability that both are girls if the eldest is a girl: 0.5019988007195683
