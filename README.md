@@ -1,6 +1,5 @@
-# Teaching Demonstrations
-Simulations, mostly probability but also linear algebra, I've used while teaching
-Usually run inside a Python IDE (eg Spyder)
+# Demonstrations & Documents from Teaching Math
+This is an assortment of Python docs, mostly simulations, that I've created and used while teaching mathematics.  They are primarily intended for use inside a Python IDE (eg Spyder) where the individual functions can be run.
 
 ## [`AirplaneSeat.py`](AirplaneSeat.py)
 Simulation of a [relatively famous probability word problem](https://www3.nd.edu/~dgalvin1/Probpuz/probpuz3.html). "One hundred people line up to board a plane with 100 seats. The first person in line is has lost his boarding pass, so he randomly chooses a seat. After that, each person entering the plane either sits in their assigned seat, if it is available, or, if not, chooses an unoccupied seat randomly.  When the 100th passenger finally enters the plane, what is the probability that she finds her assigned seat unoccupied?"  The simulation also displays what happens with intermediate passengers, as their probabilities behave much differently from the first and last passenger (a common source of incorrect reasoning about the problem).  Here's one random simulation with 10 passengers: Person 1 chose the seat for Person 7, then Person 2 chose the seat for Person 2, ... Person 7 chose the seat for Person 1, etc.
@@ -40,3 +39,6 @@ It is conjectured that some numbers will never become palindromic through this p
 >>> palindrome_sequence(196, stop_length=10)
 [196, 887, 1675, 7436, 13783, 52514, 94039, 187088, 1067869, 10755470]
 ```
+
+## [`RedCalc.py`](RedCalc.py)
+Inspired by [this course on Mathematical Python at UBC](https://personal.math.ubc.ca/~pwalls/math-python/) (github repository [here](https://github.com/patrickwalls/mathematical-python)), I taught a Math Topics course involving Python.  One of the early things we did was to revisit some calculus topics and create numerical implementations, resulting in this collection of functions.  We weren't yet using external libraries (we did later revisit some of this with NumPy).  Instead, the math provided opportunities to practice basic programming structures.  The file is roughly in chronological order, starting with the simplest programming.
