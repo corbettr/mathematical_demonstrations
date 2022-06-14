@@ -28,6 +28,19 @@ Probability that both are girls if there is at least one girl: 0.334002712982418
 ```
 The code is intended to be able to be read aloud and explained to students with no programming experience.
 
+## ['MultisetConfigs.py'](MultisetConfigs.py)
+In combinatorics, a [necklace](https://en.wikipedia.org/wiki/Necklace_(combinatorics)) is an equivalence class of permutations of a multiset, where two permutations are considered the same if they differ by a cyclic permutation. This program counts the number of distinct necklaces from a given partition.  For example, suppose we have beads *(a,a,b,b,b,c)*. This multiset is represented by the partition `(2,3,1)`. The number of distinct necklaces one can make from these beads is
+```
+>>> necklaces((2,3,1))
+10
+```
+If we further identify any two necklaces when they differ by an order-reversal, which is equivalent to turning over the physical necklace in 3-dimensional space, we have the definition of a *bracelet*. One can make 6 distinct bracelets from the multiset *(0,0,1,1,1,2)*, which is just a relabeled version of *(a,a,b,b,b,c)*. These six bracelets are:
+```
+>>> bracelets((2,3,1), 'reps')
+[(2, 1, 0, 1, 0, 1), (0, 2, 1, 0, 1, 1), (1, 0, 2, 0, 1, 1),
+ (2, 1, 1, 0, 0, 1), (0, 0, 2, 1, 1, 1), (0, 1, 0, 2, 1, 1)]
+```
+
 ## [`PalindromeNumbers.py`](PalindromeNumbers.py)
 This one is especially fun to do with children who are learning long addition.  There's an interesting unsolved conjecture (see [Lychrel number](https://en.wikipedia.org/wiki/Lychrel_number)) about whether a 'reverse and add' process will always result in a palindrome number.  For example, 57 becomes a palindrome after two iterations: 57+75 = 132, 132+231 = 363.
 ```
